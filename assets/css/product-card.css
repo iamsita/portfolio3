@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rammetto+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --bg-color: #dee0e4;
+  --card-color: #f3f3f5;
+  --primary-txt-color: #1e1e1e;
+  --secondary-txt-color: #323232;
+  --primary-white: #ffffff;
+  --primary-gray: #888888;
+}
+body {
+  background: var(--bg-color);
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+.card-container {
+  background: var(--card-color);
+  width: 22rem;
+  min-height: 30rem;
+  border-radius: 2rem;
+  padding: 1.5rem;
+}
+.image-container {
+  width: 100%;
+  height: 18rem;
+  position: relative;
+}
+.image-container img {
+  position: absolute;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card-content {
+  padding-block: 0.5rem;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+}
+
+.card-header h2 {
+  color: var(--primary-txt-color);
+  font-size: 1.4rem;
+}
+
+.fa-minus,
+.fa-plus {
+  background: var(--primary-white);
+  padding: 0.4rem 0.5rem;
+  color: var(--primary-txt-color);
+  border-radius: 0.5rem;
+}
+
+.number {
+  width: 2rem;
+  text-align: center;
+}
+
+.card-des h3 {
+  color: var(--secondary-txt-color);
+  font-weight: 600;
+}
+
+.card-des p {
+  font-size: 0.9rem;
+  color: var(--primary-gray);
+  margin: 0.8rem 0 1.4rem 0;
+}
+
+.card-des button {
+  background: var(--secondary-txt-color);
+  color: var(--primary-white);
+  border: none;
+  width: 100%;
+  height: 3.2rem;
+  font-size: 1rem;
+  border-radius: 1rem;
+}
+
+.card-des button:hover {
+  background: var(--primary-txt-color);
+}
+
+.cart {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.fa-cart-shopping {
+  font-size: 1.25rem;
+  color: var(--primary-txt-color);
+}
+
+.cart-item {
+  background: red;
+  color: var(--primary-white);
+  border-radius: 3rem;
+  text-align: center;
+  font-size: 0.7rem;
+  padding-inline: 0.4rem;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  border: 0.1rem solid var(--card-color);
+  visibility: hidden;
+  transition: 0.3s ease in-out;
+}
+
+.cart-item-active {
+  visibility: visible;
+}
+
+.message {
+  position: absolute;
+  background: rgb(254, 75, 75);
+  color: var(--primary-white);
+  padding: 0.2rem 1rem;
+  top: 0;
+  border-radius: 0.2rem;
+  font-size: 0.95rem;
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.message-active {
+  transform: translateY(130%);
+}
