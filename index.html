@@ -22,22 +22,27 @@
         <div class="logo">SB.</div>
         <ul class="navlist" id="navlist">
           <li>
-            <a href="#" class="active navlinks">Home</a>
+            <a href="#hero" class="active navlinks">Home</a>
           </li>
           <li>
-            <a href="#" class="navlinks">Myintro</a>
+            <a href="#about-me" class="navlinks">About Me</a>
           </li>
           <li>
-            <a href="#" class="navlinks">Service</a>
+            <a href="#skills" class="navlinks">Skills</a>
+          </li>
+
+          <li>
+            <a href="#services" class="navlinks">Services</a>
+          </li>
+
+          <li>
+            <a href="#portfolio" class="navlinks">Portfolio</a>
           </li>
           <li>
-            <a href="#" class="navlinks">portfolio</a>
+            <a href="#testimonial" class="navlinks">Testimonial</a>
           </li>
           <li>
-            <a href="#" class="navlinks">Testimonial</a>
-          </li>
-          <li>
-            <a href="#" class="primary-btn">Hire Me</a>
+            <a href="#hireme" class="primary-btn">Hire Me</a>
           </li>
         </ul>
         <div class="hamburger" id="hamburger">
@@ -48,7 +53,7 @@
 
     <main>
       <!----Hero Section---->
-      <section class="hero-section bg-grey">
+      <section class="hero-section bg-grey" id="hero">
         <div class="container">
           <div class="row-container">
             <div class="content">
@@ -78,7 +83,7 @@
       </section>
 
       <!---skills section--->
-      <section class="section bg-light-pink">
+      <section class="section bg-light-pink" id="skills">
         <div class="container">
           <div class="column-container">
             <div class="content">
@@ -146,7 +151,7 @@
       </section>
 
       <!---AboutMe section--->
-      <section class="section bg-white">
+      <section class="section bg-white" id="about-me">
         <div class="container">
           <div class="row-container">
             <div class="image-container" data-type="inverted-img">
@@ -190,7 +195,7 @@
       </section>
 
       <!-----services section---->
-      <section class="section bg-grey">
+      <section class="section bg-grey" id="services">
         <div class="container">
           <div class="column-container">
             <div class="content">
@@ -282,7 +287,7 @@
       </section>
 
       <!---portfolio section--->
-      <section class="section bg-white">
+      <section class="section bg-white" id="portfolio">
         <div class="container">
           <div class="column-container">
             <div class="content">
@@ -330,7 +335,7 @@
       </section>
 
       <!-----Testimonial section ------>
-      <section class="section bg-grey">
+      <section class="section bg-grey" id="testimonial">
         <div class="container">
           <div class="column-container">
             <div class="content">
@@ -460,27 +465,27 @@
       </section>
 
       <!----contactus section---->
-      <section class="section bg-white"></section>
-      >
-      <div class="container">
-        <div class="column-container">
-          <div class="content">
-            <h3>contact us</h3>
-            <h1>Get In Touch</h1>
+      <section class="section bg-white" id="hireme">
+        <div class="container">
+          <div class="column-container">
+            <div class="content">
+              <h3>contact us</h3>
+              <h1>Get In Touch</h1>
+            </div>
+            <form action="#" class="form">
+              <input type="text" placeholder="Username" required />
+              <input type="text" placeholder="Phone Number" required />
+              <input type="email" placeholder="Email Address" required />
+              <textarea
+                placeholder="Type your message here"
+                rows="5"
+                required
+              ></textarea>
+              <input type="submit" value="send message" class="primary-btn" />
+            </form>
           </div>
-          <form action="#" class="form">
-            <input type="text" placeholder="Username" required />
-            <input type="text" placeholder="Phone Number" required />
-            <input type="email" placeholder="Email Address" required />
-            <textarea
-              placeholder="Type your message here"
-              rows="5"
-              required
-            ></textarea>
-            <input type="submit" value="send message" class="primary-btn" />
-          </form>
         </div>
-      </div>
+      </section>
     </main>
 
     <!----footer section---->
@@ -495,4 +500,3 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>
 </html>
-u
